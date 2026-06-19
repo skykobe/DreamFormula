@@ -1,0 +1,158 @@
+{
+  "materials": [
+    {
+      "id": "default",
+      "name": "默认",
+      "nameEn": "Default",
+      "category": "building",
+      "type": "procedural",
+      "procedural": {
+        "baseColor": "#888888",
+        "type": "solid"
+      }
+    },
+    {
+      "id": "concrete-a",
+      "name": "混凝土A",
+      "nameEn": "Concrete A",
+      "category": "building",
+      "type": "procedural",
+      "procedural": {
+        "baseColor": "#9a9a9a",
+        "type": "concrete",
+        "grainSize": 2,
+        "seamInterval": 64,
+        "noiseStrength": 15
+      }
+    },
+    {
+      "id": "concrete-b",
+      "name": "混凝土B（深灰）",
+      "nameEn": "Concrete B (Dark)",
+      "category": "building",
+      "type": "procedural",
+      "procedural": {
+        "baseColor": "#6a6a6a",
+        "type": "concrete",
+        "grainSize": 3,
+        "seamInterval": 48,
+        "noiseStrength": 20
+      }
+    },
+    {
+      "id": "brick-wall",
+      "name": "砖墙",
+      "nameEn": "Brick Wall",
+      "category": "building",
+      "type": "procedural",
+      "procedural": {
+        "baseColor": "#8b4513",
+        "type": "brick",
+        "brickWidth": 32,
+        "brickHeight": 16,
+        "mortarWidth": 2,
+        "noiseStrength": 10
+      }
+    },
+    {
+      "id": "glass-blue",
+      "name": "蓝色玻璃",
+      "nameEn": "Blue Glass",
+      "category": "glass",
+      "type": "procedural",
+      "procedural": {
+        "baseColor": "#2a5f8a",
+        "type": "glass",
+        "reflectivity": 0.6
+      }
+    },
+    {
+      "id": "glass-dark",
+      "name": "深色玻璃",
+      "nameEn": "Dark Glass",
+      "category": "glass",
+      "type": "procedural",
+      "procedural": {
+        "baseColor": "#1a2a3a",
+        "type": "glass",
+        "reflectivity": 0.4
+      }
+    },
+    {
+      "id": "metal-steel",
+      "name": "钢材",
+      "nameEn": "Steel",
+      "category": "metal",
+      "type": "procedural",
+      "procedural": {
+        "baseColor": "#555555",
+        "type": "metal",
+        "roughness": 0.3,
+        "metalness": 0.7
+      }
+    },
+    {
+      "id": "bark-oak",
+      "name": "橡树皮",
+      "nameEn": "Oak Bark",
+      "category": "tree",
+      "type": "procedural",
+      "procedural": {
+        "baseColor": "#5c3a1e",
+        "type": "bark",
+        "grainSize": 4,
+        "noiseStrength": 25
+      }
+    },
+    {
+      "id": "foliage-dark",
+      "name": "深绿树冠",
+      "nameEn": "Dark Foliage",
+      "category": "tree",
+      "type": "procedural",
+      "procedural": {
+        "baseColor": "#2d7a3a",
+        "type": "foliage",
+        "noiseStrength": 20
+      }
+    },
+    {
+      "id": "foliage-light",
+      "name": "浅绿树冠",
+      "nameEn": "Light Foliage",
+      "category": "tree",
+      "type": "procedural",
+      "procedural": {
+        "baseColor": "#4a9e5a",
+        "type": "foliage",
+        "noiseStrength": 15
+      }
+    },
+    {
+      "id": "seat-gray",
+      "name": "灰色座椅",
+      "nameEn": "Gray Seats",
+      "category": "grandstand",
+      "type": "procedural",
+      "procedural": {
+        "baseColor": "#555555",
+        "type": "seats",
+        "seatColor": "#444444",
+        "aisleColor": "#333333"
+      }
+    },
+    {
+      "id": "seat-red",
+      "name": "红色座椅",
+      "nameEn": "Red Seats",
+      "category": "grandstand",
+      "type": "procedural",
+      "procedural": {
+        "baseColor": "#8b2020",
+        "type": "seats",
+        "seatColor": "#cc3333",
+        "aisleColor": "#444444"
+      }
+    }
+  ]
+}

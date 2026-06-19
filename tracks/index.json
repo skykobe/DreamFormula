@@ -1,0 +1,31 @@
+{
+  "tracks": [
+    {
+      "id": "test-circuit-alpha",
+      "name": "Spielberg GP Circuit",
+      "description": "4.3km赛道，基础骨架模板",
+      "difficulty": "中等",
+      "length": "4.3km",
+      "path": "/tracks/test-circuit-alpha.json",
+      "preview": "default"
+    },
+    {
+      "id": "track01",
+      "name": "Track 01 - Visual Showcase",
+      "description": "完整视觉定义范本，展示赛道扩展能力",
+      "difficulty": "中等",
+      "length": "4.5km",
+      "path": "/tracks/track01.json",
+      "preview": "visual"
+    },
+    {
+      "id": "test-banking",
+      "name": "Test Banking",
+      "description": "Banking倾斜测试赛道",
+      "difficulty": "测试",
+      "length": "5.9km",
+      "path": "/tracks/test-banking.json",
+      "preview": "default"
+    }
+  ]
+}

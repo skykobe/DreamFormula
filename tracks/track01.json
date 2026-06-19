@@ -1,0 +1,385 @@
+{
+  "name": "Suzuka Circuit",
+  "description": "",
+  "trackWidth": 14,
+  "closed": true,
+  "startLinePointIndex": 0,
+  "sectorPointIndices": [
+    12,
+    24
+  ],
+  "surfaceFriction": 1,
+  "points": [
+    {
+      "x": -12,
+      "y": 0,
+      "z": 110,
+      "width": 15,
+      "leftBuffer": 5,
+      "rightBuffer": 5,
+      "leftBufferType": "asphalt",
+      "rightBufferType": "asphalt"
+    },
+    {
+      "x": -40,
+      "y": 0,
+      "z": 161,
+      "width": 15,
+      "leftBuffer": 5,
+      "rightBuffer": 5,
+      "leftBufferType": "asphalt",
+      "rightBufferType": "asphalt"
+    },
+    {
+      "x": -63,
+      "y": 0,
+      "z": 204,
+      "width": 14,
+      "leftBuffer": 5,
+      "rightBuffer": 4,
+      "leftBufferType": "asphalt",
+      "rightBufferType": "asphalt"
+    },
+    {
+      "x": -121,
+      "y": 1,
+      "z": 256,
+      "width": 14,
+      "leftBuffer": 5,
+      "rightBuffer": 5,
+      "leftBufferType": "gravel",
+      "rightBufferType": "gravel"
+    },
+    {
+      "x": -180,
+      "y": 2,
+      "z": 235,
+      "width": 13,
+      "leftBuffer": 6,
+      "rightBuffer": 5,
+      "leftBufferType": "gravel",
+      "rightBufferType": "grass"
+    },
+    {
+      "x": -227,
+      "y": 3,
+      "z": 227,
+      "width": 12,
+      "leftBuffer": 7,
+      "rightBuffer": 6,
+      "leftBufferType": "gravel",
+      "rightBufferType": "gravel"
+    },
+    {
+      "x": -255,
+      "y": 1,
+      "z": 197,
+      "width": 12,
+      "leftBuffer": 7,
+      "rightBuffer": 6,
+      "leftBufferType": "gravel",
+      "rightBufferType": "grass"
+    },
+    {
+      "x": -221,
+      "y": 1,
+      "z": 77,
+      "width": 13,
+      "leftBuffer": 6,
+      "rightBuffer": 5,
+      "leftBufferType": "gravel",
+      "rightBufferType": "gravel"
+    },
+    {
+      "x": -195,
+      "y": 4,
+      "z": 0,
+      "width": 13,
+      "leftBuffer": 5,
+      "rightBuffer": 5,
+      "leftBufferType": "gravel",
+      "rightBufferType": "gravel"
+    },
+    {
+      "x": -152,
+      "y": 6,
+      "z": -143,
+      "width": 14,
+      "leftBuffer": 5,
+      "rightBuffer": 4,
+      "leftBufferType": "gravel",
+      "rightBufferType": "asphalt"
+    },
+    {
+      "x": -163,
+      "y": 7,
+      "z": -212,
+      "width": 13,
+      "leftBuffer": 5,
+      "rightBuffer": 5,
+      "leftBufferType": "gravel",
+      "rightBufferType": "gravel"
+    },
+    {
+      "x": -223,
+      "y": 6,
+      "z": -195,
+      "width": 12,
+      "leftBuffer": 6,
+      "rightBuffer": 6,
+      "leftBufferType": "gravel",
+      "rightBufferType": "gravel"
+    },
+    {
+      "x": -271,
+      "y": 4,
+      "z": -147,
+      "width": 12,
+      "leftBuffer": 6,
+      "rightBuffer": 5,
+      "leftBufferType": "gravel",
+      "rightBufferType": "grass"
+    },
+    {
+      "x": -389,
+      "y": 2,
+      "z": -62,
+      "width": 13,
+      "leftBuffer": 5,
+      "rightBuffer": 5,
+      "leftBufferType": "gravel",
+      "rightBufferType": "gravel"
+    },
+    {
+      "x": -524,
+      "y": 0,
+      "z": -190,
+      "width": 14,
+      "leftBuffer": 4,
+      "rightBuffer": 4,
+      "leftBufferType": "asphalt",
+      "rightBufferType": "asphalt"
+    },
+    {
+      "x": -587,
+      "y": 2,
+      "z": -85,
+      "width": 14,
+      "leftBuffer": 5,
+      "rightBuffer": 4,
+      "leftBufferType": "gravel",
+      "rightBufferType": "asphalt"
+    },
+    {
+      "x": -336,
+      "y": 8,
+      "z": 82,
+      "width": 13,
+      "leftBuffer": 5,
+      "rightBuffer": 5,
+      "leftBufferType": "gravel",
+      "rightBufferType": "gravel"
+    },
+    {
+      "x": -241,
+      "y": 9,
+      "z": 138,
+      "width": 13,
+      "leftBuffer": 6,
+      "rightBuffer": 5,
+      "leftBufferType": "gravel",
+      "rightBufferType": "grass",
+      "crossing": true
+    },
+    {
+      "x": -154,
+      "y": 9,
+      "z": 174,
+      "width": 12,
+      "leftBuffer": 5,
+      "rightBuffer": 5,
+      "leftBufferType": "gravel",
+      "rightBufferType": "gravel"
+    },
+    {
+      "x": -116,
+      "y": 10,
+      "z": 150,
+      "width": 13,
+      "leftBuffer": 5,
+      "rightBuffer": 4,
+      "leftBufferType": "asphalt",
+      "rightBufferType": "asphalt"
+    },
+    {
+      "x": -88,
+      "y": 8,
+      "z": 103,
+      "width": 13,
+      "leftBuffer": 5,
+      "rightBuffer": 5,
+      "leftBufferType": "gravel",
+      "rightBufferType": "gravel"
+    },
+    {
+      "x": -53,
+      "y": 6,
+      "z": 53,
+      "width": 12,
+      "leftBuffer": 6,
+      "rightBuffer": 5,
+      "leftBufferType": "gravel",
+      "rightBufferType": "grass"
+    },
+    {
+      "x": -27,
+      "y": 4,
+      "z": 14,
+      "width": 13,
+      "leftBuffer": 5,
+      "rightBuffer": 5,
+      "leftBufferType": "gravel",
+      "rightBufferType": "gravel"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 17,
+      "width": 14,
+      "leftBuffer": 4,
+      "rightBuffer": 4,
+      "leftBufferType": "asphalt",
+      "rightBufferType": "asphalt"
+    },
+    {
+      "x": 71,
+      "y": 2,
+      "z": -37,
+      "width": 13,
+      "leftBuffer": 5,
+      "rightBuffer": 5,
+      "leftBufferType": "gravel",
+      "rightBufferType": "gravel"
+    },
+    {
+      "x": 116,
+      "y": 1,
+      "z": -1,
+      "width": 12,
+      "leftBuffer": 6,
+      "rightBuffer": 5,
+      "leftBufferType": "gravel",
+      "rightBufferType": "grass"
+    },
+    {
+      "x": 243,
+      "y": 0,
+      "z": 102,
+      "width": 13,
+      "leftBuffer": 5,
+      "rightBuffer": 5,
+      "leftBufferType": "gravel",
+      "rightBufferType": "gravel"
+    },
+    {
+      "x": 311,
+      "y": 0,
+      "z": 161,
+      "width": 14,
+      "leftBuffer": 4,
+      "rightBuffer": 4,
+      "leftBufferType": "asphalt",
+      "rightBufferType": "asphalt"
+    },
+    {
+      "x": 393,
+      "y": 0,
+      "z": 224,
+      "width": 14,
+      "leftBuffer": 4,
+      "rightBuffer": 4,
+      "leftBufferType": "asphalt",
+      "rightBufferType": "asphalt"
+    },
+    {
+      "x": 450,
+      "y": 0,
+      "z": 267,
+      "width": 14,
+      "leftBuffer": 5,
+      "rightBuffer": 4,
+      "leftBufferType": "gravel",
+      "rightBufferType": "asphalt"
+    },
+    {
+      "x": 443,
+      "y": 0,
+      "z": 306,
+      "width": 13,
+      "leftBuffer": 5,
+      "rightBuffer": 5,
+      "leftBufferType": "gravel",
+      "rightBufferType": "gravel"
+    },
+    {
+      "x": 281,
+      "y": 0,
+      "z": 245,
+      "width": 13,
+      "leftBuffer": 5,
+      "rightBuffer": 5,
+      "leftBufferType": "gravel",
+      "rightBufferType": "gravel"
+    },
+    {
+      "x": 210,
+      "y": 0,
+      "z": 240,
+      "width": 14,
+      "leftBuffer": 4,
+      "rightBuffer": 4,
+      "leftBufferType": "asphalt",
+      "rightBufferType": "asphalt"
+    },
+    {
+      "x": 186,
+      "y": 0,
+      "z": 172,
+      "width": 14,
+      "leftBuffer": 5,
+      "rightBuffer": 4,
+      "leftBufferType": "gravel",
+      "rightBufferType": "asphalt"
+    },
+    {
+      "x": 113,
+      "y": 0,
+      "z": 173,
+      "width": 15,
+      "leftBuffer": 4,
+      "rightBuffer": 4,
+      "leftBufferType": "asphalt",
+      "rightBufferType": "asphalt"
+    },
+    {
+      "x": 119,
+      "y": 0,
+      "z": 89,
+      "width": 15,
+      "leftBuffer": 4,
+      "rightBuffer": 4,
+      "leftBufferType": "asphalt",
+      "rightBufferType": "asphalt"
+    },
+    {
+      "x": 23,
+      "y": 0,
+      "z": 75,
+      "width": 15,
+      "leftBuffer": 5,
+      "rightBuffer": 5,
+      "leftBufferType": "asphalt",
+      "rightBufferType": "asphalt"
+    }
+  ]
+}
