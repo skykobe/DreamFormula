@@ -1,9 +1,5 @@
 {
   "paths": [
-    "/models/asurada.json",
     "/models/md-01.json",
-    "/models/md-02.json",
-    "/models/rb-f1.json",
-    "/models/redbull-rb20.json"
   ]
 }
