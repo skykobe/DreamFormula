@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 3,
+  "vehicle": {
+    "id": "md-02",
+    "name": "Storm Horizon"
+  },
+  "skeleton": {
+    "anchors": {
+      "wheelFL": [1.332908, 0.459184, 0.812755],
+      "wheelFR": [1.332908, 0.459184, -0.812755],
+      "wheelRL": [-1.181441, 0.459184, 0.812755],
+      "wheelRR": [-1.181441, 0.459184, -0.812755],
+      "frontSuspensionTopL": [1.084184, 0.688776, 0.471939],
+      "frontSuspensionTopR": [1.084184, 0.688776, -0.471939],
+      "frontSuspensionLowerL": [1.186224, 0.382653, 0.395408],
+      "frontSuspensionLowerR": [1.186224, 0.382653, -0.395408],
+      "rearSuspensionTopL": [-0.924745, 0.701531, 0.433673],
+      "rearSuspensionTopR": [-0.924745, 0.701531, -0.433673],
+      "rearSuspensionLowerL": [-1.007653, 0.395408, 0.369898],
+      "rearSuspensionLowerR": [-1.007653, 0.395408, -0.369898],
+      "exhaustL": [-1.945153, 0.625, 0.121173],
+      "exhaustR": [-1.945153, 0.625, -0.121173],
+      "exhaustBendL": [-1.772959, 0.548469, 0.140306],
+      "exhaustBendR": [-1.772959, 0.548469, -0.140306],
+      "exhaustMidL": [-1.556122, 0.497449, 0.165816],
+      "exhaustMidR": [-1.556122, 0.497449, -0.165816]
+    },
+    "wheels": [
+      {
+        "anchor": "wheelFL",
+        "tyreRadius": 0.369898,
+        "rimRadius": 0.172194,
+        "width": 0.280612,
+        "rimStyle": "five-spoke",
+        "spokeCount": 5,
+        "brakeDisc": true,
+        "camberDeg": -2.4,
+        "editable": "parametric"
+      },
+      {
+        "anchor": "wheelFR",
+        "tyreRadius": 0.369898,
+        "rimRadius": 0.172194,
+        "width": 0.280612,
+        "rimStyle": "five-spoke",
+        "spokeCount": 5,
+        "brakeDisc": true,
+        "camberDeg": 2.4,
+        "editable": "parametric"
+      },
+      {
+        "anchor": "wheelRL",
+        "tyreRadius": 0.369898,
+        "rimRadius": 0.172194,
+        "width": 0.280612,
+        "rimStyle": "multi-spoke",
+        "spokeCount": 10,
+        "brakeDisc": true,
+        "camberDeg": -1.2,
+        "editable": "parametric"
+      },
+      {
+        "anchor": "wheelRR",
+        "tyreRadius": 0.369898,
+        "rimRadius": 0.172194,
+        "width": 0.280612,
+        "rimStyle": "multi-spoke",
+        "spokeCount": 10,
+        "brakeDisc": true,
+        "camberDeg": 1.2,
+        "editable": "parametric"
+      }
+    ],
+    "links": [
+      {
+        "from": "frontSuspensionTopL",
+        "to": "wheelFL",
+        "radius": 0.019133,
+        "material": "structural",
+        "editable": false
+      },
+      {
+        "from": "frontSuspensionLowerL",
+        "to": "wheelFL",
+        "radius": 0.016582,
+        "material": "carbon",
+        "editable": false
+      },
+      {
+        "from": "frontSuspensionTopR",
+        "to": "wheelFR",
+        "radius": 0.019133,
+        "material": "structural",
+        "editable": false
+      },
+      {
+        "from": "frontSuspensionLowerR",
+        "to": "wheelFR",
+        "radius": 0.016582,
+        "material": "carbon",
+        "editable": false
+      },
+      {
+        "from": "rearSuspensionTopL",
+        "to": "wheelRL",
+        "radius": 0.020408,
+        "material": "structural",
+        "editable": false
+      },
+      {
+        "from": "rearSuspensionLowerL",
+        "to": "wheelRL",
+        "radius": 0.017857,
+        "material": "carbon",
+        "editable": false
+      },
+      {
+        "from": "rearSuspensionTopR",
+        "to": "wheelRR",
+        "radius": 0.020408,
+        "material": "structural",
+        "editable": false
+      },
+      {
+        "from": "rearSuspensionLowerR",
+        "to": "wheelRR",
+        "radius": 0.017857,
+        "material": "carbon",
+        "editable": false
+      }
+    ],
+    "exhausts": [
+      {
+        "anchors": ["exhaustL", "exhaustR"],
+        "pipeRadius": 0.031888,
+        "tipLength": 0.267857,
+        "material": "structural",
+        "editable": true
+      }
+    ],
+    "cockpit": {
+      "shapes": [
+        {
+          "kind": "capsule",
+          "radius": 0.28,
+          "length": 0.9025,
+          "capSegments": 6,
+          "radialSegments": 12,
+          "position": [0.2, 0.85, 0],
+          "rotationDeg": [0, 0, 90],
+          "color": "#1a1a1a",
+          "finish": "carbon",
+          "castShadow": true,
+          "editable": true
+        }
+      ]
+    },
+    "engine": {
+      "shapes": [
+        {
+          "kind": "capsule",
+          "radius": 0.2218,
+          "length": 1.197,
+          "capSegments": 6,
+          "radialSegments": 14,
+          "position": [-0.7, 0.8, 0],
+          "rotationDeg": [0, 0, 90],
+          "color": "#4a5568",
+          "finish": "structural",
+          "castShadow": true,
+          "editable": true
+        }
+      ]
+    },
+    "floor": {
+      "shapes": [
+        {
+          "kind": "box",
+          "size": [4.119898, 0.05102, 1.322449],
+          "position": [0, 0.280612, 0],
+          "color": "#1a1a1a",
+          "finish": "carbon",
+          "editable": true
+        }
+      ]
+    }
+  }
+}
