@@ -1,0 +1,979 @@
+{
+  "schemaVersion": 2,
+  "vehicle": {
+    "id": "rb-f1",
+    "code": "F1-RB",
+    "name": "Red Bull RB-F1",
+    "color": "#1e3a5f",
+    "accent": "#ff6b00",
+    "finish": "gloss",
+    "transmission": {
+      "forwardGearRatios": [3.8, 2.7, 2.0, 1.55, 1.2, 0.95],
+      "reverseRatio": 3.5,
+      "finalDrive": 4.5
+    },
+    "referenceSetup": {
+      "frontWingDeg": 28,
+      "rearWingDeg": 32,
+      "rideHeightMm": 30,
+      "diffuserPct": 60,
+      "coolingPct": 45
+    },
+    "materials": {
+      "gloss": {
+        "metalness": 0.22,
+        "roughness": 0.28,
+        "clearcoat": 1,
+        "clearcoatRoughness": 0.12
+      },
+      "satin": {
+        "metalness": 0.15,
+        "roughness": 0.5,
+        "clearcoat": 0.25,
+        "clearcoatRoughness": 0.32
+      },
+      "carbon": {
+        "metalness": 0.5,
+        "roughness": 0.32,
+        "clearcoat": 0.88,
+        "clearcoatRoughness": 0.2
+      },
+      "accent": {
+        "metalness": 0.2,
+        "roughness": 0.25,
+        "clearcoat": 0.92,
+        "clearcoatRoughness": 0.16
+      },
+      "structural": {
+        "metalness": 0.75,
+        "roughness": 0.2,
+        "clearcoat": 0.55,
+        "clearcoatRoughness": 0.3
+      },
+      "canopy": {
+        "color": "#1b2330",
+        "metalness": 0.2,
+        "roughness": 0.12,
+        "clearcoat": 0.9,
+        "clearcoatRoughness": 0.1
+      }
+    },
+    "analysis": {
+      "bodyDensity": 36.2,
+      "materialDensity": {
+        "body": 1180,
+        "accent": 1180,
+        "structural": 7900,
+        "carbon": 1550,
+        "canopy": 1280,
+        "tyre": 1080,
+        "rim": 2750,
+        "sidewall": 1080,
+        "glow": 1180
+      },
+      "fillFactor": {
+        "body": 0.11,
+        "accent": 0.18,
+        "structural": 0.14,
+        "carbon": 0.11,
+        "canopy": 0.28,
+        "glow": 0.04
+      },
+      "treadThickness": 0.014
+    }
+  },
+  "visualSkeleton": {
+    "proportions": {
+      "length": 5.2,
+      "width": 2.0,
+      "height": 1.48,
+      "wheelbase": 3.1
+    },
+    "anchors": {
+      "wheelFL": [1.38, 0.44, 0.84],
+      "wheelFR": [1.38, 0.44, -0.84],
+      "wheelRL": [-1.22, 0.44, 0.84],
+      "wheelRR": [-1.22, 0.44, -0.84],
+      "frontSuspensionTopL": [1.12, 0.7, 0.49],
+      "frontSuspensionTopR": [1.12, 0.7, -0.49],
+      "frontSuspensionLowerL": [1.22, 0.36, 0.41],
+      "frontSuspensionLowerR": [1.22, 0.36, -0.41],
+      "rearSuspensionTopL": [-0.96, 0.72, 0.45],
+      "rearSuspensionTopR": [-0.96, 0.72, -0.45],
+      "rearSuspensionLowerL": [-1.04, 0.38, 0.38],
+      "rearSuspensionLowerR": [-1.04, 0.38, -0.38],
+      "exhaustL": [-1.98, 0.64, 0.13],
+      "exhaustR": [-1.98, 0.64, -0.13],
+      "pushrodFrontL": [1.18, 0.45, 0.35],
+      "pushrodFrontR": [1.18, 0.45, -0.35],
+      "pushrodRearL": [-1.0, 0.45, 0.34],
+      "pushrodRearR": [-1.0, 0.45, -0.34]
+    }
+  },
+  "visualParts": [
+    {
+      "type": "meshPart",
+      "name": "body-nose-flow",
+      "material": "body",
+      "geometry": {
+        "kind": "buffer",
+        "vertices": [
+          [2.55, 0.24, 0.0],
+          [2.24, 0.30, 0.035],
+          [2.24, 0.27, 0.035],
+          [2.55, 0.24, 0.0],
+          [2.24, 0.30, 0.035],
+          [2.24, 0.30, -0.035],
+          [2.55, 0.24, 0.0],
+          [2.24, 0.27, 0.035],
+          [2.24, 0.27, -0.035],
+          [2.55, 0.24, 0.0],
+          [2.24, 0.30, -0.035],
+          [2.24, 0.27, -0.035],
+          [2.24, 0.30, 0.035],
+          [1.93, 0.37, 0.072],
+          [1.93, 0.30, 0.072],
+          [2.24, 0.30, 0.035],
+          [1.93, 0.30, 0.072],
+          [2.24, 0.27, 0.035],
+          [2.24, 0.30, -0.035],
+          [1.93, 0.37, -0.072],
+          [1.93, 0.30, -0.072],
+          [2.24, 0.30, -0.035],
+          [1.93, 0.30, -0.072],
+          [2.24, 0.27, -0.035],
+          [1.93, 0.37, 0.072],
+          [1.61, 0.43, 0.112],
+          [1.61, 0.33, 0.112],
+          [1.93, 0.37, 0.072],
+          [1.61, 0.33, 0.112],
+          [1.93, 0.30, 0.072],
+          [1.93, 0.37, -0.072],
+          [1.61, 0.43, -0.112],
+          [1.61, 0.33, -0.112],
+          [1.93, 0.37, -0.072],
+          [1.61, 0.33, -0.112],
+          [1.93, 0.30, -0.072],
+          [1.61, 0.43, 0.112],
+          [1.30, 0.49, 0.156],
+          [1.30, 0.36, 0.156],
+          [1.61, 0.43, 0.112],
+          [1.30, 0.36, 0.156],
+          [1.61, 0.33, 0.112],
+          [1.61, 0.43, -0.112],
+          [1.30, 0.49, -0.156],
+          [1.30, 0.36, -0.156],
+          [1.61, 0.43, -0.112],
+          [1.30, 0.36, -0.156],
+          [1.61, 0.33, -0.112],
+          [1.30, 0.49, 0.156],
+          [0.99, 0.55, 0.207],
+          [0.99, 0.39, 0.207],
+          [1.30, 0.49, 0.156],
+          [0.99, 0.39, 0.207],
+          [1.30, 0.36, 0.156],
+          [1.30, 0.49, -0.156],
+          [0.99, 0.55, -0.207],
+          [0.99, 0.39, -0.207],
+          [1.30, 0.49, -0.156],
+          [0.99, 0.39, -0.207],
+          [1.30, 0.36, -0.156]
+        ]
+      },
+      "position": [0.0, 0.0, 0.0],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "body-sidepod-left-flow",
+      "material": "body",
+      "geometry": {
+        "kind": "buffer",
+        "vertices": [
+          [0.99, 0.55, 0.207],
+          [0.67, 0.60, 0.290],
+          [0.99, 0.39, 0.207],
+          [0.99, 0.39, 0.207],
+          [0.67, 0.60, 0.290],
+          [0.67, 0.42, 0.290],
+          [0.67, 0.60, 0.290],
+          [0.54, 0.33, 0.288],
+          [0.67, 0.42, 0.290],
+          [0.67, 0.60, 0.290],
+          [-0.32, 0.56, 0.44],
+          [0.54, 0.33, 0.288],
+          [0.67, 0.42, 0.290],
+          [-0.32, 0.56, 0.44],
+          [0.54, 0.42, 0.227],
+          [0.54, 0.33, 0.288],
+          [-0.32, 0.56, 0.44],
+          [-0.32, 0.44, 0.44],
+          [0.54, 0.42, 0.227],
+          [0.54, 0.42, 0.227],
+          [-0.32, 0.56, 0.44],
+          [-0.46, 0.82, 0.0],
+          [-0.46, 0.82, 0.0],
+          [-0.32, 0.56, 0.44],
+          [-0.32, 0.56, -0.44]
+        ]
+      },
+      "position": [0.0, 0.0, 0.0],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "body-sidepod-right-flow",
+      "material": "body",
+      "geometry": {
+        "kind": "buffer",
+        "vertices": [
+          [0.99, 0.55, -0.207],
+          [0.67, 0.60, -0.290],
+          [0.99, 0.39, -0.207],
+          [0.99, 0.39, -0.207],
+          [0.67, 0.60, -0.290],
+          [0.67, 0.42, -0.290],
+          [0.67, 0.60, -0.290],
+          [0.54, 0.33, -0.288],
+          [0.67, 0.42, -0.290],
+          [0.67, 0.60, -0.290],
+          [-0.32, 0.56, -0.44],
+          [0.54, 0.33, -0.288],
+          [0.67, 0.42, -0.290],
+          [-0.32, 0.56, -0.44],
+          [0.54, 0.42, -0.227],
+          [0.54, 0.33, -0.288],
+          [-0.32, 0.56, -0.44],
+          [-0.32, 0.44, -0.44],
+          [0.54, 0.42, -0.227],
+          [0.54, 0.42, -0.227],
+          [-0.32, 0.56, -0.44],
+          [-0.46, 0.82, 0.0],
+          [-0.46, 0.82, 0.0],
+          [-0.32, 0.56, -0.44],
+          [-0.32, 0.56, 0.44]
+        ]
+      },
+      "position": [0.0, 0.0, 0.0],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "body-engine-cover-flow",
+      "material": "body",
+      "geometry": {
+        "kind": "buffer",
+        "vertices": [
+          [-0.46, 0.82, 0.0],
+          [-1.60, 0.82, 0.0],
+          [-0.46, 0.82, 0.24],
+          [-0.46, 0.82, 0.24],
+          [-1.60, 0.82, 0.0],
+          [-1.60, 0.82, 0.24],
+          [-1.60, 0.82, 0.0],
+          [-0.46, 0.82, -0.24],
+          [-0.46, 0.82, 0.0],
+          [-1.60, 0.82, 0.0],
+          [-1.60, 0.82, -0.24],
+          [-0.46, 0.82, -0.24],
+          [-1.60, 0.82, 0.0],
+          [-2.08, 0.64, 0.0],
+          [-1.60, 0.82, 0.14],
+          [-1.60, 0.82, 0.14],
+          [-2.08, 0.64, 0.0],
+          [-1.60, 0.82, 0.0],
+          [-1.60, 0.82, 0.0],
+          [-2.08, 0.64, 0.0],
+          [-1.60, 0.82, -0.14],
+          [-1.60, 0.82, -0.14],
+          [-2.08, 0.64, 0.0],
+          [-1.60, 0.82, 0.0]
+        ]
+      },
+      "position": [0.0, 0.0, 0.0],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "body-floor-flow",
+      "material": "carbon",
+      "geometry": {
+        "kind": "buffer",
+        "vertices": [
+          [1.30, 0.29, 0.84],
+          [-1.22, 0.29, 0.84],
+          [1.30, 0.29, -0.84],
+          [-1.22, 0.29, 0.84],
+          [-1.22, 0.29, -0.84],
+          [1.30, 0.29, -0.84],
+          [1.30, 0.29, 0.84],
+          [1.85, 0.29, 0.5],
+          [-1.22, 0.29, 0.84],
+          [1.85, 0.29, 0.5],
+          [1.85, 0.29, -0.5],
+          [-1.22, 0.29, 0.84],
+          [-1.22, 0.29, -0.84],
+          [1.85, 0.29, -0.5]
+        ]
+      },
+      "position": [0.0, 0.0, 0.0],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "body-sidepod-left",
+      "material": "body",
+      "geometry": {
+        "kind": "box",
+        "size": [0.62, 0.26, 0.18]
+      },
+      "position": [-0.32, 0.56, 0.44],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "body-sidepod-right",
+      "material": "body",
+      "geometry": {
+        "kind": "box",
+        "size": [0.62, 0.26, 0.18]
+      },
+      "position": [-0.32, 0.56, -0.44],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "canopy-cockpit",
+      "material": "canopy",
+      "geometry": {
+        "kind": "capsule",
+        "radius": 0.18,
+        "length": 0.59,
+        "capSegments": 6,
+        "radialSegments": 12
+      },
+      "position": [-0.36, 0.78, 0],
+      "rotationDeg": [0, 90, 90],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "carbon-halo-top",
+      "material": "carbon",
+      "geometry": {
+        "kind": "torus",
+        "radius": 0.27,
+        "tube": 0.029,
+        "radialSegments": 8,
+        "tubularSegments": 18,
+        "arc": 3.14159
+      },
+      "position": [-0.23, 0.92, 0],
+      "rotationDeg": [0, 0, 90]
+    },
+    {
+      "type": "meshPart",
+      "name": "carbon-halo-pillar",
+      "material": "carbon",
+      "geometry": {
+        "kind": "cylinder",
+        "radiusTop": 0.026,
+        "radiusBottom": 0.026,
+        "height": 0.32,
+        "radialSegments": 12
+      },
+      "position": [-0.23, 0.75, 0]
+    },
+    {
+      "type": "meshPart",
+      "name": "carbon-halo-side-left",
+      "material": "carbon",
+      "geometry": {
+        "kind": "cylinder",
+        "radiusTop": 0.021,
+        "radiusBottom": 0.021,
+        "height": 0.34,
+        "radialSegments": 12
+      },
+      "position": [-0.06, 0.85, 0.12],
+      "rotationDeg": [0, 0, 32]
+    },
+    {
+      "type": "meshPart",
+      "name": "carbon-halo-side-right",
+      "material": "carbon",
+      "geometry": {
+        "kind": "cylinder",
+        "radiusTop": 0.021,
+        "radiusBottom": 0.021,
+        "height": 0.34,
+        "radialSegments": 12
+      },
+      "position": [-0.06, 0.85, -0.12],
+      "rotationDeg": [0, 0, -32]
+    },
+    {
+      "type": "meshPart",
+      "name": "vehicle-airbox",
+      "material": "carbon",
+      "geometry": {
+        "kind": "box",
+        "size": [0.34, 0.26, 0.25]
+      },
+      "position": [-0.75, 1.14, 0],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "structural-crash",
+      "material": "structural",
+      "geometry": {
+        "kind": "cylinder",
+        "radiusTop": 0.14,
+        "radiusBottom": 0.19,
+        "height": 0.9,
+        "radialSegments": 12
+      },
+      "position": [-1.52, 0.64, 0],
+      "rotationDeg": [0, 0, -90],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "structural-tail-tip",
+      "material": "structural",
+      "geometry": {
+        "kind": "cylinder",
+        "radiusTop": 0.05,
+        "radiusBottom": 0.14,
+        "height": 0.32,
+        "radialSegments": 10
+      },
+      "position": [-2.08, 0.64, 0],
+      "rotationDeg": [0, 0, -90],
+      "castShadow": true
+    },
+    {
+      "type": "wingPart",
+      "name": "vehicle-front-wing",
+      "material": "accent",
+      "span": 2.0,
+      "chord": 0.88,
+      "endplateHeight": 0.31,
+      "position": [2.92, 0.27, 0]
+    },
+    {
+      "type": "wingPart",
+      "name": "vehicle-rear-wing",
+      "material": "accent",
+      "span": 1.62,
+      "chord": 0.56,
+      "endplateHeight": 0.53,
+      "position": [-2.18, 1.05, 0],
+      "rotationDeg": [0, 180, 0]
+    },
+    {
+      "type": "meshPart",
+      "name": "carbon-beam-wing",
+      "material": "carbon",
+      "geometry": {
+        "kind": "box",
+        "size": [0.47, 0.052, 0.94]
+      },
+      "position": [-1.94, 0.52, 0],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "structural-rear-pylon-left",
+      "material": "structural",
+      "geometry": {
+        "kind": "cylinder",
+        "radiusTop": 0.036,
+        "radiusBottom": 0.036,
+        "height": 0.4,
+        "radialSegments": 10
+      },
+      "position": [-2.08, 0.85, 0.22],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "structural-rear-pylon-right",
+      "material": "structural",
+      "geometry": {
+        "kind": "cylinder",
+        "radiusTop": 0.036,
+        "radiusBottom": 0.036,
+        "height": 0.4,
+        "radialSegments": 10
+      },
+      "position": [-2.08, 0.85, -0.22],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "structural-front-pylon-left",
+      "material": "structural",
+      "geometry": {
+        "kind": "cylinder",
+        "radiusTop": 0.036,
+        "radiusBottom": 0.036,
+        "height": 0.39,
+        "radialSegments": 10
+      },
+      "position": [2.78, 0.34, 0.92],
+      "rotationDeg": [0, 0, -75],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "structural-front-pylon-right",
+      "material": "structural",
+      "geometry": {
+        "kind": "cylinder",
+        "radiusTop": 0.036,
+        "radiusBottom": 0.036,
+        "height": 0.39,
+        "radialSegments": 10
+      },
+      "position": [2.78, 0.34, -0.92],
+      "rotationDeg": [0, 0, -75],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "mirror-stalk-left",
+      "material": "carbon",
+      "geometry": {
+        "kind": "cylinder",
+        "radiusTop": 0.016,
+        "radiusBottom": 0.016,
+        "height": 0.27,
+        "radialSegments": 12
+      },
+      "position": [0.35, 0.77, 0.47],
+      "rotationDeg": [16, 0, -38],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "mirror-stalk-right",
+      "material": "carbon",
+      "geometry": {
+        "kind": "cylinder",
+        "radiusTop": 0.016,
+        "radiusBottom": 0.016,
+        "height": 0.27,
+        "radialSegments": 12
+      },
+      "position": [0.35, 0.77, -0.47],
+      "rotationDeg": [-16, 0, -38],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "mirror-cap-left",
+      "material": "accent",
+      "geometry": {
+        "kind": "capsule",
+        "radius": 0.055,
+        "length": 0.12,
+        "capSegments": 6,
+        "radialSegments": 10
+      },
+      "position": [0.45, 0.83, 0.56],
+      "rotationDeg": [0, 18, 90],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "mirror-cap-right",
+      "material": "accent",
+      "geometry": {
+        "kind": "capsule",
+        "radius": 0.055,
+        "length": 0.12,
+        "capSegments": 6,
+        "radialSegments": 10
+      },
+      "position": [0.45, 0.83, -0.56],
+      "rotationDeg": [0, -18, 90],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "accent-stripe",
+      "material": "accent",
+      "geometry": {
+        "kind": "box",
+        "size": [1.95, 0.039, 0.084]
+      },
+      "position": [-0.13, 0.72, 0]
+    },
+    {
+      "type": "meshPart",
+      "name": "brake-duct-left",
+      "material": "carbon",
+      "geometry": {
+        "kind": "box",
+        "size": [0.14, 0.078, 0.12]
+      },
+      "position": [0.92, 0.52, 0.62],
+      "rotationDeg": [0, 8, 0],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "brake-duct-right",
+      "material": "carbon",
+      "geometry": {
+        "kind": "box",
+        "size": [0.14, 0.078, 0.12]
+      },
+      "position": [0.92, 0.52, -0.62],
+      "rotationDeg": [0, -8, 0],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "canard-left",
+      "material": "accent",
+      "geometry": {
+        "kind": "box",
+        "size": [0.22, 0.016, 0.1]
+      },
+      "position": [1.45, 0.56, 0.47],
+      "rotationDeg": [0, 14, -18],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "canard-right",
+      "material": "accent",
+      "geometry": {
+        "kind": "box",
+        "size": [0.22, 0.016, 0.1]
+      },
+      "position": [1.45, 0.56, -0.47],
+      "rotationDeg": [0, -14, -18],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "nose-strake-left",
+      "material": "carbon",
+      "geometry": {
+        "kind": "box",
+        "size": [0.34, 0.026, 0.016]
+      },
+      "position": [1.75, 0.4, 0.16],
+      "rotationDeg": [0, 6, 0],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "nose-strake-right",
+      "material": "carbon",
+      "geometry": {
+        "kind": "box",
+        "size": [0.34, 0.026, 0.016]
+      },
+      "position": [1.75, 0.4, -0.16],
+      "rotationDeg": [0, -6, 0],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "exhaust-pipe-bend-left",
+      "material": "structural",
+      "geometry": {
+        "kind": "cylinder",
+        "radiusTop": 0.034,
+        "radiusBottom": 0.034,
+        "height": 0.25,
+        "radialSegments": 14
+      },
+      "position": [-1.8, 0.56, 0.14],
+      "rotationDeg": [0, 18, -24],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "exhaust-pipe-bend-right",
+      "material": "structural",
+      "geometry": {
+        "kind": "cylinder",
+        "radiusTop": 0.034,
+        "radiusBottom": 0.034,
+        "height": 0.25,
+        "radialSegments": 14
+      },
+      "position": [-1.8, 0.56, -0.14],
+      "rotationDeg": [0, -18, -24],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "exhaust-heat-shield",
+      "material": "carbon",
+      "geometry": {
+        "kind": "box",
+        "size": [0.54, 0.12, 0.41]
+      },
+      "position": [-1.9, 0.56, 0],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "rear-light-central",
+      "material": "accent",
+      "geometry": {
+        "kind": "box",
+        "size": [0.052, 0.046, 0.27]
+      },
+      "position": [-2.22, 0.58, 0],
+      "castShadow": false
+    },
+    {
+      "type": "meshPart",
+      "name": "rear-light-left",
+      "material": "accent",
+      "geometry": {
+        "kind": "box",
+        "size": [0.039, 0.039, 0.1]
+      },
+      "position": [-2.21, 0.57, 0.38],
+      "castShadow": false
+    },
+    {
+      "type": "meshPart",
+      "name": "rear-light-right",
+      "material": "accent",
+      "geometry": {
+        "kind": "box",
+        "size": [0.039, 0.039, 0.1]
+      },
+      "position": [-2.21, 0.57, -0.38],
+      "castShadow": false
+    },
+    {
+      "type": "meshPart",
+      "name": "rear-wing-endplate-gurney-left",
+      "material": "carbon",
+      "geometry": {
+        "kind": "box",
+        "size": [0.078, 0.026, 0.12]
+      },
+      "position": [-2.18, 1.26, 0.79],
+      "castShadow": true
+    },
+    {
+      "type": "meshPart",
+      "name": "rear-wing-endplate-gurney-right",
+      "material": "carbon",
+      "geometry": {
+        "kind": "box",
+        "size": [0.078, 0.026, 0.12]
+      },
+      "position": [-2.18, 1.26, -0.79],
+      "castShadow": true
+    },
+    {
+      "type": "wheelAssembly",
+      "name": "vehicle-wheel-fl",
+      "anchor": "wheelFL",
+      "tyreRadius": 0.37,
+      "rimRadius": 0.17,
+      "width": 0.28,
+      "rimStyle": "five-spoke",
+      "spokeCount": 5,
+      "brakeDisc": true,
+      "camberDeg": -2.5,
+      "sidewallText": "RED BULL",
+      "sidewallColor": "#ff6b00"
+    },
+    {
+      "type": "wheelAssembly",
+      "name": "vehicle-wheel-fr",
+      "anchor": "wheelFR",
+      "tyreRadius": 0.37,
+      "rimRadius": 0.17,
+      "width": 0.28,
+      "rimStyle": "five-spoke",
+      "spokeCount": 5,
+      "brakeDisc": true,
+      "camberDeg": 2.5,
+      "sidewallText": "RED BULL",
+      "sidewallColor": "#ff6b00"
+    },
+    {
+      "type": "wheelAssembly",
+      "name": "vehicle-wheel-rl",
+      "anchor": "wheelRL",
+      "tyreRadius": 0.37,
+      "rimRadius": 0.17,
+      "width": 0.28,
+      "rimStyle": "multi-spoke",
+      "spokeCount": 10,
+      "brakeDisc": true,
+      "camberDeg": -1.3
+    },
+    {
+      "type": "wheelAssembly",
+      "name": "vehicle-wheel-rr",
+      "anchor": "wheelRR",
+      "tyreRadius": 0.37,
+      "rimRadius": 0.17,
+      "width": 0.28,
+      "rimStyle": "multi-spoke",
+      "spokeCount": 10,
+      "brakeDisc": true,
+      "camberDeg": 1.3
+    },
+    {
+      "type": "suspensionLink",
+      "name": "front-link-left",
+      "from": "frontSuspensionTopL",
+      "to": "wheelFL",
+      "radius": 0.019,
+      "material": "structural"
+    },
+    {
+      "type": "suspensionLink",
+      "name": "front-lower-link-left",
+      "from": "frontSuspensionLowerL",
+      "to": "wheelFL",
+      "radius": 0.017,
+      "material": "carbon"
+    },
+    {
+      "type": "suspensionLink",
+      "name": "front-link-right",
+      "from": "frontSuspensionTopR",
+      "to": "wheelFR",
+      "radius": 0.019,
+      "material": "structural"
+    },
+    {
+      "type": "suspensionLink",
+      "name": "front-lower-link-right",
+      "from": "frontSuspensionLowerR",
+      "to": "wheelFR",
+      "radius": 0.017,
+      "material": "carbon"
+    },
+    {
+      "type": "suspensionLink",
+      "name": "rear-link-left",
+      "from": "rearSuspensionTopL",
+      "to": "wheelRL",
+      "radius": 0.021,
+      "material": "structural"
+    },
+    {
+      "type": "suspensionLink",
+      "name": "rear-lower-link-left",
+      "from": "rearSuspensionLowerL",
+      "to": "wheelRL",
+      "radius": 0.018,
+      "material": "carbon"
+    },
+    {
+      "type": "suspensionLink",
+      "name": "rear-link-right",
+      "from": "rearSuspensionTopR",
+      "to": "wheelRR",
+      "radius": 0.021,
+      "material": "structural"
+    },
+    {
+      "type": "suspensionLink",
+      "name": "rear-lower-link-right",
+      "from": "rearSuspensionLowerR",
+      "to": "wheelRR",
+      "radius": 0.018,
+      "material": "carbon"
+    },
+    {
+      "type": "suspensionLink",
+      "name": "front-pushrod-left",
+      "from": "pushrodFrontL",
+      "to": "frontSuspensionTopL",
+      "radius": 0.014,
+      "material": "structural"
+    },
+    {
+      "type": "suspensionLink",
+      "name": "front-pushrod-right",
+      "from": "pushrodFrontR",
+      "to": "frontSuspensionTopR",
+      "radius": 0.014,
+      "material": "structural"
+    },
+    {
+      "type": "suspensionLink",
+      "name": "rear-pushrod-left",
+      "from": "pushrodRearL",
+      "to": "rearSuspensionTopL",
+      "radius": 0.016,
+      "material": "structural"
+    },
+    {
+      "type": "suspensionLink",
+      "name": "rear-pushrod-right",
+      "from": "pushrodRearR",
+      "to": "rearSuspensionTopR",
+      "radius": 0.016,
+      "material": "structural"
+    },
+    {
+      "type": "damper",
+      "name": "front-damper-left",
+      "top": "frontSuspensionTopL",
+      "bottom": "frontSuspensionLowerL",
+      "radius": 0.032
+    },
+    {
+      "type": "damper",
+      "name": "front-damper-right",
+      "top": "frontSuspensionTopR",
+      "bottom": "frontSuspensionLowerR",
+      "radius": 0.032
+    },
+    {
+      "type": "damper",
+      "name": "rear-damper-left",
+      "top": "rearSuspensionTopL",
+      "bottom": "rearSuspensionLowerL",
+      "radius": 0.034
+    },
+    {
+      "type": "damper",
+      "name": "rear-damper-right",
+      "top": "rearSuspensionTopR",
+      "bottom": "rearSuspensionLowerR",
+      "radius": 0.034
+    },
+    {
+      "type": "exhaust",
+      "name": "rear-exhaust",
+      "anchors": ["exhaustL", "exhaustR"],
+      "pipeRadius": 0.032,
+      "tipLength": 0.27,
+      "material": "structural"
+    },
+    {
+      "type": "diffuser",
+      "name": "rear-diffuser",
+      "width": 1.8,
+      "length": 0.48,
+      "height": 0.15,
+      "finCount": 6,
+      "angle": 6,
+      "material": "carbon",
+      "position": [-1.85, 0.29, 0],
+      "rotationDeg": [0, 0, 0]
+    }
+  ]
+}
