@@ -1,0 +1,705 @@
+{
+    "schemaVersion": 3,
+    "vehicle": {
+        "id": "md-02",
+        "name": "Storm Horizon"
+    },
+    "skeleton": {
+        "anchors": {
+            "wheelFL": [
+                1.332908,
+                0.459184,
+                0.812755
+            ],
+            "wheelFR": [
+                1.332908,
+                0.459184,
+                -0.812755
+            ],
+            "wheelRL": [
+                -1.181441,
+                0.459184,
+                0.812755
+            ],
+            "wheelRR": [
+                -1.181441,
+                0.459184,
+                -0.812755
+            ],
+            "frontSuspensionTopL": [
+                1.084184,
+                0.4934073344,
+                0.026703667200000003
+            ],
+            "frontSuspensionTopR": [
+                1.084184,
+                0.4934073344,
+                -0.026703667200000003
+            ],
+            "frontSuspensionLowerL": [
+                1.186224,
+                0.39051100159999996,
+                0.024744499200000006
+            ],
+            "frontSuspensionLowerR": [
+                1.186224,
+                0.39051100159999996,
+                -0.024744499200000006
+            ],
+            "pushrodFrontL": [
+                1.084,
+                0.373232,
+                0.08012159999999999
+            ],
+            "pushrodFrontR": [
+                1.084,
+                0.373232,
+                -0.08012159999999999
+            ],
+            "trackRodFrontL": [
+                1.12,
+                0.479024,
+                0.052031999999999995
+            ],
+            "trackRodFrontR": [
+                1.12,
+                0.479024,
+                -0.052031999999999995
+            ],
+            "rearSuspensionTopL": [
+                -0.924745,
+                0.535,
+                0.3
+            ],
+            "rearSuspensionTopR": [
+                -0.924745,
+                0.535,
+                -0.3
+            ],
+            "rearSuspensionLowerL": [
+                -0.924745,
+                0.41,
+                0.3
+            ],
+            "rearSuspensionLowerR": [
+                -0.924745,
+                0.41,
+                -0.3
+            ],
+            "exhaustL": [
+                -1.55,
+                0.625,
+                0.121173
+            ],
+            "exhaustR": [
+                -1.55,
+                0.625,
+                -0.121173
+            ],
+            "exhaustBendL": [
+                -1.4,
+                0.548469,
+                0.140306
+            ],
+            "exhaustBendR": [
+                -1.4,
+                0.548469,
+                -0.140306
+            ],
+            "exhaustMidL": [
+                -1.25,
+                0.497449,
+                0.165816
+            ],
+            "exhaustMidR": [
+                -1.25,
+                0.497449,
+                -0.165816
+            ],
+            "frontWingMount": [
+                2.0,
+                0.28,
+                0
+            ],
+            "noseMount": [
+                0.6,
+                0.48,
+                0
+            ],
+            "bodyMount": [
+                -0.3,
+                0.31,
+                0
+            ],
+            "rearWingMount": [
+                -1.7,
+                0.7,
+                0
+            ]
+        },
+        "connections": {
+            "frontWing": {
+                "anchor": "frontWingMount"
+            },
+            "nose": {
+                "anchor": "noseMount"
+            },
+            "body": {
+                "anchor": "bodyMount"
+            },
+            "rearWing": {
+                "anchor": "rearWingMount"
+            }
+        },
+        "wheels": [
+            {
+                "anchor": "wheelFL",
+                "tyreRadius": 0.369898,
+                "rimRadius": 0.172194,
+                "width": 0.280612,
+                "rimStyle": "five-spoke",
+                "spokeCount": 5,
+                "brakeDisc": true,
+                "camberDeg": -2.4,
+                "editable": "parametric"
+            },
+            {
+                "anchor": "wheelFR",
+                "tyreRadius": 0.369898,
+                "rimRadius": 0.172194,
+                "width": 0.280612,
+                "rimStyle": "five-spoke",
+                "spokeCount": 5,
+                "brakeDisc": true,
+                "camberDeg": 2.4,
+                "editable": "parametric"
+            },
+            {
+                "anchor": "wheelRL",
+                "tyreRadius": 0.369898,
+                "rimRadius": 0.172194,
+                "width": 0.280612,
+                "rimStyle": "multi-spoke",
+                "spokeCount": 10,
+                "brakeDisc": true,
+                "camberDeg": -1.2,
+                "editable": "parametric"
+            },
+            {
+                "anchor": "wheelRR",
+                "tyreRadius": 0.369898,
+                "rimRadius": 0.172194,
+                "width": 0.280612,
+                "rimStyle": "multi-spoke",
+                "spokeCount": 10,
+                "brakeDisc": true,
+                "camberDeg": 1.2,
+                "editable": "parametric"
+            }
+        ],
+        "links": [
+            {
+                "from": "frontSuspensionTopL",
+                "to": "wheelFL",
+                "radius": 0.019133,
+                "material": "structural",
+                "editable": false
+            },
+            {
+                "from": "frontSuspensionLowerL",
+                "to": "wheelFL",
+                "radius": 0.016582,
+                "material": "carbon",
+                "editable": false
+            },
+            {
+                "from": "frontSuspensionTopR",
+                "to": "wheelFR",
+                "radius": 0.019133,
+                "material": "structural",
+                "editable": false
+            },
+            {
+                "from": "frontSuspensionLowerR",
+                "to": "wheelFR",
+                "radius": 0.016582,
+                "material": "carbon",
+                "editable": false
+            },
+            {
+                "from": "rearSuspensionTopL",
+                "to": "wheelRL",
+                "radius": 0.020408,
+                "material": "structural",
+                "editable": false
+            },
+            {
+                "from": "rearSuspensionLowerL",
+                "to": "wheelRL",
+                "radius": 0.017857,
+                "material": "carbon",
+                "editable": false
+            },
+            {
+                "from": "rearSuspensionTopR",
+                "to": "wheelRR",
+                "radius": 0.020408,
+                "material": "structural",
+                "editable": false
+            },
+            {
+                "from": "rearSuspensionLowerR",
+                "to": "wheelRR",
+                "radius": 0.017857,
+                "material": "carbon",
+                "editable": false
+            },
+            {
+                "from": "pushrodFrontL",
+                "to": "wheelFL",
+                "radius": 0.012,
+                "material": "structural",
+                "editable": false
+            },
+            {
+                "from": "pushrodFrontR",
+                "to": "wheelFR",
+                "radius": 0.012,
+                "material": "structural",
+                "editable": false
+            },
+            {
+                "from": "trackRodFrontL",
+                "to": "wheelFL",
+                "radius": 0.01,
+                "material": "carbon",
+                "editable": false
+            },
+            {
+                "from": "trackRodFrontR",
+                "to": "wheelFR",
+                "radius": 0.01,
+                "material": "carbon",
+                "editable": false
+            }
+        ],
+        "exhausts": [
+            {
+                "anchors": [
+                    "exhaustL",
+                    "exhaustR"
+                ],
+                "pipeRadius": 0.031888,
+                "tipLength": 0.267857,
+                "material": "structural",
+                "editable": true
+            }
+        ],
+        "cockpit": {
+            "shapes": [
+                {
+                    "kind": "capsule",
+                    "radius": 0.28,
+                    "length": 0.7,
+                    "capSegments": 6,
+                    "radialSegments": 12,
+                    "position": [
+                        0.2,
+                        0.55,
+                        0
+                    ],
+                    "rotationDeg": [
+                        0,
+                        0,
+                        90
+                    ],
+                    "color": "#1a1a1a",
+                    "finish": "carbon",
+                    "castShadow": true,
+                    "editable": true
+                }
+            ]
+        },
+        "engine": {
+            "shapes": [
+                {
+                    "kind": "capsule",
+                    "radius": 0.2218,
+                    "length": 0.8,
+                    "capSegments": 6,
+                    "radialSegments": 14,
+                    "position": [
+                        -0.7,
+                        0.65,
+                        0
+                    ],
+                    "rotationDeg": [
+                        0,
+                        0,
+                        90
+                    ],
+                    "color": "#4a5568",
+                    "finish": "structural",
+                    "castShadow": true,
+                    "editable": true
+                }
+            ]
+        },
+        "floor": {
+            "shapes": [
+                {
+                    "kind": "box",
+                    "size": [
+                        3.9,
+                        0.05102,
+                        1.2
+                    ],
+                    "position": [
+                        0.15,
+                        0.280612,
+                        0
+                    ],
+                    "color": "#1a1a1a",
+                    "finish": "carbon",
+                    "editable": true
+                }
+            ]
+        }
+    },
+    "modules": {
+        "frontWing": {
+            "connectionPoint": "frontWingMount",
+            "shapes": [
+                {
+                    "kind": "box",
+                    "name": "main-plane",
+                    "size": [
+                        0.65,
+                        0.025,
+                        1.75
+                    ],
+                    "position": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "color": "#e8ecf0",
+                    "finish": "gloss",
+                    "castShadow": true,
+                    "editable": true
+                },
+                {
+                    "kind": "box",
+                    "name": "flap",
+                    "size": [
+                        0.35,
+                        0.02,
+                        1.65
+                    ],
+                    "position": [
+                        0.15,
+                        0.06,
+                        0
+                    ],
+                    "rotationDeg": [
+                        0,
+                        0,
+                        -15
+                    ],
+                    "color": "#e8ecf0",
+                    "finish": "gloss",
+                    "castShadow": true,
+                    "editable": true
+                },
+                {
+                    "kind": "box",
+                    "name": "endplate-left",
+                    "size": [
+                        0.55,
+                        0.22,
+                        0.025
+                    ],
+                    "position": [
+                        0.05,
+                        0.08,
+                        0.88
+                    ],
+                    "color": "#e8ecf0",
+                    "finish": "gloss",
+                    "castShadow": true,
+                    "editable": true
+                },
+                {
+                    "kind": "box",
+                    "name": "endplate-right",
+                    "size": [
+                        0.55,
+                        0.22,
+                        0.025
+                    ],
+                    "position": [
+                        0.05,
+                        0.08,
+                        -0.88
+                    ],
+                    "color": "#e8ecf0",
+                    "finish": "gloss",
+                    "castShadow": true,
+                    "editable": true
+                }
+            ]
+        },
+        "rearWing": {
+            "connectionPoint": "rearWingMount",
+            "shapes": [
+                {
+                    "kind": "box",
+                    "name": "main-plane",
+                    "size": [
+                        0.45,
+                        0.025,
+                        1.5
+                    ],
+                    "position": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "color": "#e8ecf0",
+                    "finish": "gloss",
+                    "castShadow": true,
+                    "editable": true
+                },
+                {
+                    "kind": "box",
+                    "name": "flap",
+                    "size": [
+                        0.3,
+                        0.02,
+                        1.4
+                    ],
+                    "position": [
+                        -0.1,
+                        0.06,
+                        0
+                    ],
+                    "rotationDeg": [
+                        0,
+                        0,
+                        20
+                    ],
+                    "color": "#e8ecf0",
+                    "finish": "gloss",
+                    "castShadow": true,
+                    "editable": true
+                },
+                {
+                    "kind": "box",
+                    "name": "endplate-left",
+                    "size": [
+                        0.4,
+                        0.25,
+                        0.025
+                    ],
+                    "position": [
+                        -0.05,
+                        0.1,
+                        0.76
+                    ],
+                    "color": "#e8ecf0",
+                    "finish": "gloss",
+                    "castShadow": true,
+                    "editable": true
+                },
+                {
+                    "kind": "box",
+                    "name": "endplate-right",
+                    "size": [
+                        0.4,
+                        0.25,
+                        0.025
+                    ],
+                    "position": [
+                        -0.05,
+                        0.1,
+                        -0.76
+                    ],
+                    "color": "#e8ecf0",
+                    "finish": "gloss",
+                    "castShadow": true,
+                    "editable": true
+                },
+                {
+                    "kind": "cylinder",
+                    "name": "pylon-left",
+                    "radiusTop": 0.015,
+                    "radiusBottom": 0.015,
+                    "height": 0.42,
+                    "radialSegments": 8,
+                    "position": [
+                        0.15,
+                        -0.22,
+                        0.4
+                    ],
+                    "rotationDeg": [
+                        0,
+                        0,
+                        8
+                    ],
+                    "color": "#4a5568",
+                    "finish": "structural",
+                    "castShadow": true,
+                    "editable": false
+                },
+                {
+                    "kind": "cylinder",
+                    "name": "pylon-right",
+                    "radiusTop": 0.015,
+                    "radiusBottom": 0.015,
+                    "height": 0.42,
+                    "radialSegments": 8,
+                    "position": [
+                        0.15,
+                        -0.22,
+                        -0.4
+                    ],
+                    "rotationDeg": [
+                        0,
+                        0,
+                        8
+                    ],
+                    "color": "#4a5568",
+                    "finish": "structural",
+                    "castShadow": true,
+                    "editable": false
+                }
+            ]
+        },
+        "body": {
+            "connectionPoint": "bodyMount",
+            "shapes": [
+                {
+                    "kind": "box",
+                    "name": "monocoque",
+                    "size": [
+                        1.2,
+                        0.3,
+                        0.75
+                    ],
+                    "position": [
+                        0.3,
+                        0.15,
+                        0
+                    ],
+                    "color": "#e8ecf0",
+                    "finish": "gloss",
+                    "castShadow": true,
+                    "editable": true
+                },
+                {
+                    "kind": "box",
+                    "name": "engine-cover",
+                    "size": [
+                        0.9,
+                        0.25,
+                        0.6
+                    ],
+                    "position": [
+                        -0.45,
+                        0.1,
+                        0
+                    ],
+                    "color": "#e8ecf0",
+                    "finish": "gloss",
+                    "castShadow": true,
+                    "editable": true
+                },
+                {
+                    "kind": "box",
+                    "name": "sidepod-left",
+                    "size": [
+                        0.8,
+                        0.2,
+                        0.25
+                    ],
+                    "position": [
+                        0.0,
+                        0.1,
+                        0.45
+                    ],
+                    "color": "#e8ecf0",
+                    "finish": "gloss",
+                    "castShadow": true,
+                    "editable": true
+                },
+                {
+                    "kind": "box",
+                    "name": "sidepod-right",
+                    "size": [
+                        0.8,
+                        0.2,
+                        0.25
+                    ],
+                    "position": [
+                        0.0,
+                        0.1,
+                        -0.45
+                    ],
+                    "color": "#e8ecf0",
+                    "finish": "gloss",
+                    "castShadow": true,
+                    "editable": true
+                }
+            ]
+        },
+        "nose": {
+            "connectionPoint": "noseMount",
+            "shapes": [
+                {
+                    "kind": "cylinder",
+                    "name": "nose-cone",
+                    "radiusTop": 0.084,
+                    "radiusBottom": 0.18,
+                    "height": 1.0,
+                    "radialSegments": 14,
+                    "position": [
+                        0.5,
+                        -0.04,
+                        0
+                    ],
+                    "rotationDeg": [
+                        0,
+                        0,
+                        -90
+                    ],
+                    "color": "#e8ecf0",
+                    "finish": "gloss",
+                    "castShadow": true,
+                    "editable": true
+                },
+                {
+                    "kind": "cylinder",
+                    "name": "nose-tip",
+                    "radiusTop": 0.042,
+                    "radiusBottom": 0.084,
+                    "height": 0.4,
+                    "radialSegments": 12,
+                    "position": [
+                        1.2,
+                        -0.12,
+                        0
+                    ],
+                    "rotationDeg": [
+                        0,
+                        0,
+                        -90
+                    ],
+                    "color": "#ff2d20",
+                    "finish": "accent",
+                    "castShadow": true,
+                    "editable": true
+                }
+            ]
+        }
+    }
+}
